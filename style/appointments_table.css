@@ -1,0 +1,112 @@
+/* https://paletton.com/#uid=a3g0s0kwi++bu++hX++++rd++kX */
+
+/* global */
+:root {
+  --main-color: #00ffe9;
+  --secondary-color: #ff6f00;
+}
+
+/* header */
+header {
+  padding: 1rem 1rem;
+  background-color: var(--main-color);
+  /* background-color: ; */
+}
+header #logo {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.left-side span {
+  font-family: "MerriweatherSans, sans-serif";
+  font-size: 18px;
+}
+
+.right-Side {
+  gap: 0.6rem;
+}
+.right-Side .container-search * {
+  border: none;
+}
+.right-Side input {
+  outline: none;
+}
+.portfolio .containerImg {
+  font-size: 45px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.right-Side .portfolio .text-name {
+  font-family: "PTSansCAption-regular, sans-serif";
+  font-size: 16px;
+}
+.right-Side .searchIcon,
+.right-Side .notification {
+  font-size: 23px;
+}
+.right-Side .notification,
+.right-Side .portfolio {
+  cursor: pointer;
+}
+@media (width <= 768px) {
+  .right-Side .input-search {
+    display: none;
+  }
+  .right-Side .portfolio .text-name {
+    display: none;
+  }
+}
+
+/* appointments-table */
+main .main-container {
+  max-width: 532px;
+}
+#appointments-table {
+  margin-block-start: 3rem !important;
+  margin-inline: 1rem !important;
+}
+#appointments-table caption {
+  caption-side: top;
+  text-align: center;
+}
+#appointments-table tr {
+  border-bottom: solid 1px;
+}
+#appointments-table tr > * {
+  padding: 0.5rem 0.7rem;
+  text-align: center;
+}
+#appointments-table .phone {
+  width: 10rem;
+}
+
+#appointments-table .container-Button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+#appointments-table .style-Buttons {
+  font-size: 0.8rem;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-family: "PTSansCAption-regular, sans-serif";
+}
+#appointments-table .style-Buttons:hover {
+  opacity: 0.8 !important;
+}
+/* "I manually set the color for delete-button:hover, .change-button:hover, 
+and their :active states in CSS to prevent the background from 
+turning white on hover." on hover */
+.delete-button,
+.delete-button:hover,
+.delete-button:active {
+  background-color: crimson !important;
+}
+.change-button,
+.change-button:hover,
+.change-button:active {
+  background-color: var(--secondary-color) !important;
+}

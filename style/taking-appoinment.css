@@ -1,0 +1,76 @@
+/* navbar */
+@media (max-width: 992px) {
+  .right-Side button {
+    position: relative;
+  }
+  #navbarSupportedContent {
+    position: absolute;
+    top: 56px;
+    right: 61px;
+    width: 39vw;
+  }
+  #navbarSupportedContent ul {
+    border: solid 1px;
+    background-color: var(--main-color);
+  }
+
+  #navbarSupportedContent li:not(:last-child) {
+    border-bottom: solid 1px;
+  }
+}
+#navbarSupportedContent a {
+  padding-left: 19px;
+  transition: 0.3s;
+}
+#navbarSupportedContent a:hover {
+  padding-inline: 28px;
+}
+
+main {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+  main {
+    background-image: url(../imgs/landing-page-landscape.jpg);
+  }
+}
+
+@media (min-width: 769px) {
+  main {
+    background-image: url(../imgs/landing-page-portrait.jpg);
+  }
+}
+/* form */
+.form {
+  max-width: 532px;
+  padding-inline: 1rem !important;
+}
+form > div {
+  display: flex;
+  flex-direction: column;
+}
+form label,
+input[type="submit"] {
+  font-family: "PTSansCAption-regular, sans-serif";
+  font-size: 1.2rem;
+}
+label::after {
+  content: "*";
+  color: red;
+}
+form input {
+  border-radius: 0.375rem;
+}
+input[type="submit"] {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 0.375rem 0.75rem;
+  transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #ff6f00a9;
+}
