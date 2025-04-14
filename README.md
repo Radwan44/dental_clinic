@@ -1,3 +1,6 @@
+# dental_clinic
+it is a sleek and simple web project for managing dental clinic patient data, built using JSON Server as a storage solution.
+
 Attempts I Struggled With:
 • Trying to make the favicon circular (unsuccessful).
 Accomplishments:
@@ -70,10 +73,7 @@ localStorage.setItem("currentId", id)
   const idRow = rowselected.getElementsByClassName("id")[0]
   rowselected.remove()
   }
-  =======
 
-# dental_clinic
 
-it is a sleek and simple web project for managing dental clinic patient data, built using JSON Server as a storage solution.
 
 > > > > > > > 6f9fb0c3d86dd5c5425d29312f7254dc2a3bf8c7
